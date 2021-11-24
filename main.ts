@@ -1,5 +1,17 @@
+scene.onOverlapTile(SpriteKind.Player, sprites.swamp.swampTile3, function (sprite, location) {
+    Shark.destroy(effects.fire, 500)
+    Shark.setVelocity(0, 0)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleBlueCrystal, function (sprite, location) {
+    tiles.setTileAt(location, sprites.dungeon.collectibleInsignia)
+    info.changeScoreBy(1)
+})
+sprites.onDestroyed(SpriteKind.Player, function (sprite) {
+    game.over(false)
+})
+let Shark: Sprite = null
 tiles.setTilemap(tilemap`Level1 m M`)
-let Shark = sprites.create(img`
+Shark = sprites.create(img`
     .............ccfff..............
     ............cddbbf..............
     ...........cddbbf...............
@@ -17,6 +29,7 @@ let Shark = sprites.create(img`
     .......cccccfbdbbfc.............
     .............fffff..............
     `, SpriteKind.Player)
-controller.moveSprite(Shark)
+controller.moveSprite(Shark, 100, 100)
 scene.cameraFollowSprite(Shark)
 effects.bubbles.startScreenEffect()
+info.startCountdown(200)

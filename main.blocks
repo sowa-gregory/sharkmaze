@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="vjY39bdo3Gt-ZWGG2md6">Shark</variable><variable type="KIND_SpriteKind" id="cH1D(+]Xq(=Z0x%Tw39^">Player</variable><variable type="KIND_SpriteKind" id="A?-Ihw]6LNN?DmAXSx39">Projectile</variable><variable type="KIND_SpriteKind" id="(7~JfI4ZFel~Amz1~lx}">Food</variable><variable type="KIND_SpriteKind" id="|2d(.fujvTIIlC$30dZg">Enemy</variable></variables><block type="pxt-on-start" id="6PW{I!}C1Nry]QB5B@Z/" x="0" y="0"><statement name="HANDLER"><block type="tilemap_editor" id="kWm{e1T00?rc)G/SBT}g"><field name="tilemap">tilemap`Level1 m M`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level2"}}</data><next><block type="variables_set" id="s2,tG%QqZc11xxfgB%*_"><field name="VAR" id="vjY39bdo3Gt-ZWGG2md6">Shark</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="^|CWG{JonUJ:K7Dt?651"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+.............ccfff..............
+............cddbbf..............
+...........cddbbf...............
+..........fccbbcf............ccc
+....ffffffccccccff.........ccbbc
+..ffbbbbbbbbbbbbbcfff.....cdbbc.
+ffbbbbbbbbbcbcbbbbcccff..cddbbf.
+fbcbbbbbffbbcbcbbbcccccfffdbbf..
+fbbb1111ff1bcbcbbbcccccccbbbcf..
+.fb11111111bbbbbbcccccccccbccf..
+..fccc33cc11bbbbccccccccfffbbcf.
+...fc131c111bbbcccccbdbc...fbbf.
+....f33c111cbbbfdddddcc.....fbbf
+.....ff1111fbdbbfddcc........fff
+.......cccccfbdbbfc.............
+.............fffff..............
+`</field><data>{"commentRefs":[],"fieldData":{"img":"nVb:eyzjJhLEH4(Fyw_W"}}</data></shadow><block type="screen_image_picker" id="f*tz5$7RRqdn,[R/C$N("><field name="img">img`
+.............ccfff..............
+............cddbbf..............
+...........cddbbf...............
+..........fccbbcf............ccc
+....ffffffccccccff.........ccbbc
+..ffbbbbbbbbbbbbbcfff.....cdbbc.
+ffbbbbbbbbbcbcbbbbcccff..cddbbf.
+fbcbbbbbffbbcbcbbbcccccfffdbbf..
+fbbb1111ff1bcbcbbbcccccccbbbcf..
+.fb11111111bbbbbbcccccccccbccf..
+..fccc33cc11bbbbccccccccfffbbcf.
+...fc131c111bbbcccccbdbc...fbbf.
+....f33c111cbbbfdddddcc.....fbbf
+.....ff1111fbdbbfddcc........fff
+.......cccccfbdbbfc.............
+.............fffff..............
+`</field><data>{"commentRefs":[],"fieldData":{"img":"f*tz5$7RRqdn,[R/C$N("}}</data></block></value><value name="kind"><shadow type="spritekind" id="Y-A_}=(2Y$Q.B3eR*hF2"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="yxVROH~Y6[oW=R6YA=_I"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="=5CXr^X17pzUC#2*z?hw"><field name="VAR" id="vjY39bdo3Gt-ZWGG2md6">Shark</field></block></value><next><block type="camerafollow" id="_%9(BkE__;%8LCQ2idw$"><value name="sprite"><block type="variables_get" id="3$OP-[=ZeaSF_YS0E52R"><field name="VAR" id="vjY39bdo3Gt-ZWGG2md6">Shark</field></block></value><next><block type="particlesStartScreenAnimation" id="}92WLqwhf?}R6KUx^?g)"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><field name="effect">effects.bubbles</field></block></next></block></next></block></next></block></next></block></statement></block></xml>
